@@ -62,5 +62,15 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIUserInterfaceStyle</key>
+	<string>Dark</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Used to attach pictures</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Used to attach pictures</string>
+	<key>UIStatusBarStyle</key>
+	<string>LightContent</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string></string>
 </dict>
 </plist>

@@ -7,6 +7,7 @@
 
 import UIKit
 import CoreData
+import IQKeyboardManagerSwift
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,6 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
+    // Enable IQKeyboardManagerSwift to automatically move input fields visible area
+    configureKeyboardManager()
     return true
   }
 
@@ -79,3 +82,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+// MARK: IQKeyboardManager
+extension AppDelegate {
+    func configureKeyboardManager() {
+        IQKeyboardManager.shared.enable = true
+        IQKeyboardManager.shared.shouldShowToolbarPlaceholder = false
+        IQKeyboardManager.shared.enableAutoToolbar = false
+    }
+}
